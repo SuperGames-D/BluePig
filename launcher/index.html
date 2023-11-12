@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BluePig Launcher</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/SuperGames-D/GameSup/main/icon-png.png">
+    <style>
+.center {
+  text-align: center;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #424242;
+color: white;
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="center">
+    <img src="thumbnail.png" width="70%">
+<hr>
+    <text style="font-size: 30px">Blue Pig Launcher</text>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+
+    <text style="font-size: 20px">Version</text>
+    <select id="version" style="padding: 5px; font-size: 20px;">
+       <option value="none">Select a version</option>
+       <option value="1_0">1.0</option>
+        <option value="1_1">1.1</option>
+        <option value="1_2">1.2</option>
+</select>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <button onclick="download()" style="padding: 10px; font-size: 20px; background-color: #00B4FF; color: white">Download</button>
+<text style="font-size: 20px;" id="message"></text>
+
+    <br> <br>
+    <a href="https://gamesupd.github.io/accounts/profile.html?user=SuperGames-&pfp=https://cdn2.scratch.mit.edu/get_image/user/107443526_60x60.png&desc=Hi,%20I%27m%20SuperGames-!" style="font-size: 20px; text-decoration: none; border: 2px solid grey; padding: 10px; background-color: white; color: black;" target="_blank">Developer</a>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <button id="myBtn" style="padding: 10px; font-size: 20px; background-color: white; color: black">Install Instructions</button>
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2 style="color:white;font-size:50px;">Install Instructions</h2>
+      <text style="font-size: 20px;">
+          Select the version you want to download and click the Download button.
+          <br>
+          After downloading, go to your downloads, and you will find BluePig.zip.
+          <br>
+          Extract the files from BluePig.zip and run BluePig.exe.
+          <br>
+          You may have to ignore warning saying that the file is dangerous.
+      </text>
+
+
+  </div>
+
+</div>
+
+
+
+    <script src="launcher.js"></script>
+
+</div>
+</body>
+</html>
