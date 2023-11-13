@@ -19,6 +19,11 @@ if (version == "none") {
 document.getElementById("message").innerHTML = "Please select a version"
 document.getElementById("message").style = "font-size: 20px; color: red;"
 }
+  if (version == "web") {
+    window.location.href = "https://supergames-d.itch.io/blue-pig"
+document.getElementById("message").innerHTML = "Redirecting to page..."
+document.getElementById("message").style = "font-size: 20px;"
+  }
 }
 
 
