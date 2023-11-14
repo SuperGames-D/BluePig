@@ -1,6 +1,6 @@
 function download() {
 version = document.getElementById("version").value
-if (version == "1_2") {
+if (version == "latest") {
 window.location.href = "https://github.com/SuperGames-D/BluePig/raw/main/BluePig.zip"
 document.getElementById("message").innerHTML = "Your download is starting..."
 document.getElementById("message").style = "font-size: 20px;"
@@ -22,6 +22,11 @@ document.getElementById("message").style = "font-size: 20px; color: red;"
   if (version == "web") {
     window.location.href = "https://supergames-d.itch.io/blue-pig"
 document.getElementById("message").innerHTML = "Redirecting to page..."
+document.getElementById("message").style = "font-size: 20px;"
+  }
+  if (version == "1_2") {
+window.location.href = "https://github.com/SuperGames-D/BluePig/raw/main/1.2/BluePig.zip"
+document.getElementById("message").innerHTML = "Your download is starting..."
 document.getElementById("message").style = "font-size: 20px;"
   }
 }
